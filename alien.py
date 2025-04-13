@@ -1,9 +1,18 @@
+"""
+Alien Module
+Copyright (c) 2024 ELYES
+All rights reserved.
+
+Manages the alien enemies in the Alien Invasion game.
+Created and developed by ELYES.
+"""
+
 import pygame
 from pygame.sprite import Sprite
 
 
 class Alien(Sprite):
-    """A class to represent a single alien in the fleet."""
+    """A class to represent a single alien in the fleet. Created by ELYES."""
 
     def __init__(self, ai_game):
         """Initialize the alien and set its starting position."""
@@ -27,6 +36,7 @@ class Alien(Sprite):
         screen_rect = self.screen.get_rect()
         if self.rect.right >= screen_rect.right or self.rect.left <= 0:
             return True
+        return False
 
     def update(self):
         """Move the alien right or left."""

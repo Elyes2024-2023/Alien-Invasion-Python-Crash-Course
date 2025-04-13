@@ -1,10 +1,19 @@
+"""
+Ship Module
+Copyright (c) 2024 ELYES
+All rights reserved.
+
+Manages the player's ship in the Alien Invasion game.
+Created and developed by ELYES.
+"""
+
 import pygame
 
 from pygame.sprite import Sprite
 
 
 class Ship(Sprite):
-    """A class to manage the ship."""
+    """A class to manage the ship. Created by ELYES."""
 
     def __init__(self, ai_game):
         """Initialize the ship and set its starting position."""
@@ -34,6 +43,9 @@ class Ship(Sprite):
             self.x += self.settings.ship_speed
         if self.moving_left and self.rect.left > 0:
             self.x -= self.settings.ship_speed
+
+        # Ensure the ship doesn't go off screen
+        self.x = max(0, min(self.x, self.screen_rect.right - self.rect.width))
 
         # Update rect object from self.x.
         self.rect.x = self.x

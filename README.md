@@ -1,6 +1,39 @@
-# alien-invasion
+# Alien Invasion Game
 
-Alien Invasion game from Python Crash Course book
+A Python game created by ELYES using Pygame where players control a ship to shoot down invading aliens.
+
+## About
+This game is a classic space shooter where you control a spaceship to defend against an alien invasion. The game features:
+- Smooth ship movement
+- Alien fleet formation
+- Score tracking
+- Level progression
+- High score system
+
+## Copyright Notice
+© 2024 ELYES. All rights reserved.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Installation
+1. Make sure you have Python installed
+2. Install the required packages:
+   ```
+   pip install pygame
+   ```
+3. Run the game:
+   ```
+   python alien_invasion.py
+   ```
+
+## Controls
+- Left/Right Arrow Keys: Move ship
+- Spacebar: Shoot
+- Q: Quit game
+
+## Credits
+Created and developed by ELYES
 
 ![alt text](screenshots/alien_invasion.jpg "Alien Invasion")
 

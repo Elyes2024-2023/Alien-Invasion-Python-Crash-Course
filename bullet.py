@@ -1,9 +1,18 @@
+"""
+Bullet Module
+Copyright (c) 2024 ELYES
+All rights reserved.
+
+Manages bullets fired by the player's ship in the Alien Invasion game.
+Created and developed by ELYES.
+"""
+
 import pygame
 from pygame.sprite import Sprite
 
 
 class Bullet(Sprite):
-    """A class to manage bullets fired from the ship"""
+    """A class to manage bullets fired from the ship. Created by ELYES."""
 
     def __init__(self, ai_game):
         """Create a bullet object at the ship's current position."""

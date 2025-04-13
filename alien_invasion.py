@@ -1,3 +1,12 @@
+"""
+Alien Invasion Game
+Copyright (c) 2024 ELYES
+All rights reserved.
+
+A Python game using Pygame where players control a ship to shoot down invading aliens.
+Created and developed by ELYES.
+"""
+
 import sys
 from time import sleep
 
@@ -13,7 +22,7 @@ from alien import Alien
 
 
 class AlienInvasion:
-    """Overall class to manage game assets and behavior."""
+    """Overall class to manage game assets and behavior. Created by ELYES."""
 
     def __init__(self):
         """Initialize the game, and create game resources."""
@@ -249,6 +258,7 @@ class AlienInvasion:
         if not self.stats.game_active:
             self.play_button.draw_button()
 
+        # Make the most recently drawn screen visible.
         pygame.display.flip()
 
 

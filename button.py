@@ -1,7 +1,17 @@
+"""
+Button Module
+Copyright (c) 2024 ELYES
+All rights reserved.
+
+Manages the game's interactive buttons and their display.
+Created and developed by ELYES.
+"""
+
 import pygame.font
 
 
 class Button:
+    """A class to create and manage game buttons. Created by ELYES."""
 
     def __init__(self, ai_game, msg):
         """Initialize button attributes."""
@@ -29,6 +39,7 @@ class Button:
         self.msg_image_rect.center = self.rect.center
 
     def draw_button(self):
+        """Draw the button and its message on the screen."""
         # Draw blank button and then draw message.
         self.screen.fill(self.button_color, self.rect)
         self.screen.blit(self.msg_image, self.msg_image_rect)

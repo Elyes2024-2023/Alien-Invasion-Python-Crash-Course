@@ -1,3 +1,12 @@
+"""
+Scoreboard Module
+Copyright (c) 2024 ELYES
+All rights reserved.
+
+Manages the display of game scores, levels, and remaining ships.
+Created and developed by ELYES.
+"""
+
 import pygame.font
 from pygame.sprite import Group
 
@@ -5,7 +14,7 @@ from ship import Ship
 
 
 class Scoreboard:
-    """A class to report scoring information."""
+    """A class to report scoring information. Created by ELYES."""
 
     def __init__(self, ai_game):
         """Initialize scorekeeping attributes."""
